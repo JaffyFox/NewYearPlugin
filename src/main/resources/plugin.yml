@@ -1,0 +1,9 @@
+name: NewYearPlugin
+description: "New Year Plugin by JaffyFox"
+website: 
+author: JaffyFox
+version: '1.0'
+main: ua.jaffyfox.newYearPlugin.NewYearPlugin
+api-version: '1.21'
+commands:
+
