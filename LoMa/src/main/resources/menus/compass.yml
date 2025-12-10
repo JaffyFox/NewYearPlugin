@@ -1,0 +1,12 @@
+# Compass (server selector opener) hotbar item configuration
+# Placeholders allowed via localization keys or raw text
+
+enabled: true
+slot: 0
+material: COMPASS
+name: "menu.items.compass.name"
+lore:
+  - "menu.items.compass.lore1"
+  - "menu.items.compass.lore2"
+action: "menu:servers"
+glowing: true

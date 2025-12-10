@@ -1,0 +1,68 @@
+enabled: true
+capacity: 5
+warning_at: 4
+
+intake:
+  water_bottle: 1
+  water_bucket: 2
+
+duration_seconds: 5
+spawn_radius: 2
+tick_period: 2
+
+# How far and how dense the stream goes forward
+spawn:
+  forward_offset: 0.7    # how far in front of the player the stream starts
+  spread: 0.08           # random spread for density
+  forward_speed: 0.18    # push forward
+  down_speed: -0.08      # fall speed
+
+drops:
+  enabled: true
+  per_tick: 5
+  materials:
+    - YELLOW_WOOL
+    - YELLOW_STAINED_GLASS
+    - YELLOW_CONCRETE
+
+effects:
+  nausea:
+    enabled: true
+    amplifier: 1
+  slowness:
+    enabled: true
+    amplifier: 1
+
+sound:
+  enabled: false
+  name: ENTITY_PLAYER_BURP
+  volume: 1.0
+  pitch: 1.0
+
+# Interaction settings for urination stream
+interactions:
+  raytrace_max_distance: 8.0   # how far forward to search for hit blocks
+  samples_per_tick: 6          # how many rays per tick (area coverage)
+
+water:
+  enabled: true
+  glass_material: YELLOW_STAINED_GLASS  # block to place on water
+  unbreakable: true                     # prevent breaking until it reverts
+  revert_min_seconds: 10                # earliest revert time
+  revert_max_seconds: 25                # latest revert time (staggered per block)
+
+snow:
+  enabled: true
+  carpet_material: YELLOW_CARPET        # replace snow with this; can be broken but drops nothing
+
+messages:
+  piss_warning: "§c§lУ вас слишком переполненный мочевой пузырь!"
+  piss_effect: "§6§lПроцесс мочеиспускания..."
+  progress_actionbar: "§eПузырь: §6%current%§7/§6%capacity%"
+  trigger_chat: "%player% мне очень нужно в туалет..."
+  disabled: "§cФункция мочеиспускания выключена."
+  no_permission: "§cНедостаточно прав."
+  player_not_found: "§cИгрок не найден."
+  command_self: "§eВы начали мочеиспускание."
+  command_other: "§eВы запустили мочеиспускание у %player%."
+  command_target: "§eУ вас началось мочеиспускание по команде %sender%."

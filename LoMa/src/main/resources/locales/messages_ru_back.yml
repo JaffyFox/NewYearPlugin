@@ -1,0 +1,257 @@
+# Русская локализация LoMa
+prefix: "&8[&b&lLoMa&8] &7"
+
+startup:
+  header: "&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+  name: "&b  LoMa | Lobby Manager"
+  version: "&f  Версия: &e{version}"
+  author: "&f  Автор: &eJaffyFox"
+  status: "&f  Статус: &aУспешно включён!"
+  footer: "&a▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬▬"
+
+shutdown:
+  disabled: "&cLoMa выключен!"
+
+general:
+  no-permission: "&cНедостаточно прав для выполнения команды!"
+  player-not-found: "&cИгрок &e{player} &cне найден!"
+  invalid-args: "&cНеверные аргументы! Использование: &e{usage}"
+  console-only: "&cЭту команду можно выполнять только из консоли!"
+  player-only: "&cЭту команду можно выполнять только игроком!"
+  reload-success: "&aКонфигурация успешно перезагружена!"
+  reload-failed: "&cНе удалось перезагрузить конфигурацию!"
+
+spawn:
+  teleported: "&aВы телепортированы на спавн!"
+  teleported-other: "&aВы телепортировали &e{player} &aна спавн!"
+  set: "&aТочка спавна успешно установлена!"
+  not-set: "&cТочка спавна не настроена!"
+  protection: "&cВы не можете делать это в зоне спавна!"
+
+npc:
+  created: "&aNPC &e{name} &aсоздан!"
+  removed: "&cNPC &e{name} &cудалён!"
+  not-found: "&cNPC не найден!"
+  list-header: "&7&m-------- &b&l NPC &7&m--------"
+  list-entry: "&7- &e{id} &7| &a{name} &7| &f{location}"
+  list-empty: "&cNPC не найдены!"
+  cooldown: "&cПодождите &e{time} &cсек. перед следующим взаимодействием!"
+  no-permission: "&cУ вас нет прав на взаимодействие с этим NPC!"
+  teleported: "&aВы были телепортированы!"
+  item-given: "&aВы получили &e{amount}x {item}&a!"
+  action-performed: "&aДействие выполнено!"
+  reloaded: "&aNPC перезагружены!"
+  updated:
+    name: "&aИмя NPC обновлено!"
+    skin: "&aСкин NPC обновлён!"
+    permission: "&aПраво NPC обновлено!"
+    cooldown: "&aКулдаун NPC обновлён!"
+    glowing: "&aПодсветка NPC обновлена!"
+    lookplayer: "&aВзгляд на игрока для NPC обновлён!"
+  properties: "&7Доступные: name, skin, permission, cooldown, glowing, lookplayer"
+  actions:
+    available: "&7Доступные действия: &f{list}"
+  action-added: "&aДействие добавлено к NPC!"
+
+server:
+  connecting: "&aПодключение к &e{server}&a..."
+  not-found: "&cСервер &e{server} &cне найден!"
+  already-connected: "&cВы уже на этом сервере!"
+  offline: "&cСервер сейчас офлайн!"
+  full: "&cСервер заполнен!"
+  maintenance: "&cСервер на техническом обслуживании!"
+
+lobby:
+  welcome: "&aДобро пожаловать в лобби, &e{player}&a!"
+  leave: "&e{player} &7вышел из лобби!"
+  join: "&e{player} &7зашёл в лобби!"
+  protection: "&cВы не можете делать это здесь!"
+  void-teleport: "&cВы упали в бездну и были телепортированы на спавн!"
+
+doublejump:
+  enabled: "&aДвойной прыжок &2включён&a!"
+  disabled: "&cДвойной прыжок &4выключен&c!"
+  cooldown: "&cПерезарядка двойного прыжка: &e{time} &cсек.!"
+  no-permission: "&cУ вас нет прав на двойной прыжок!"
+
+ride:
+  mounted: "&aВы посадили &e{player}&a!"
+  you-mounted: "&e{player} &aпосадил вас!"
+  cooldown: "&cПодождите &e{time} &cсек. перед следующим поднятием!"
+
+visibility:
+  players-hidden: "&cИгроки теперь &4скрыты&c!"
+  players-shown: "&aИгроки теперь &2видимы&a!"
+  toggle-cooldown: "&cПодождите перед следующей сменой видимости!"
+  item:
+    shown:
+      name: "&a&lВидимость игроков &7(ПКМ)"
+      lore1: "&7Игроки сейчас &aвидимы"
+      lore2: "&7Нажмите, чтобы скрыть их!"
+    hidden:
+      name: "&c&lВидимость игроков &7(ПКМ)"
+      lore1: "&7Игроки сейчас &cскрыты"
+      lore2: "&7Нажмите, чтобы показать их!"
+
+menu:
+  opening: "&aОткрывается &e{menu}&a..."
+  closed: "&cМеню закрыто!"
+  item-clicked: "&7Вы кликнули по &e{item}&7!"
+  no-permission: "&cУ вас нет прав на открытие этого меню!"
+  not-found: "&cМеню &e{menu} &cне найдено!"
+  titles:
+    servers: "&8Выбор сервера"
+    profile: "&8Ваш профиль"
+    cosmetics: "&8Косметика"
+    particles: "&8Частицы"
+  close: "&c&lЗакрыть"
+  next: "&aСледующая страница →"
+  prev: "&c← Предыдущая страница"
+  # items merged
+  items:
+    compass:
+      name: "&b&lВыбор сервера"
+      lore1: "&7Нажмите, чтобы открыть"
+      lore2: "&7меню выбора сервера"
+    servers:
+      survival:
+        name: "&a&lSurvival"
+        lore1: "&7Классический режим выживания"
+        lore2: "&7Игроков: &e{online}&7/&e{max}"
+      creative:
+        name: "&e&lCreative"
+        lore1: "&7Творческий режим"
+        lore2: "&7Игроков: &e{online}&7/&e{max}"
+      minigames:
+        name: "&c&lМини-игры"
+        lore1: "&7Различные мини-игры"
+        lore2: "&7Игроков: &e{online}&7/&e{max}"
+      click: "&eНажмите, чтобы подключиться!"
+    profile:
+      head:
+        name: "&b&l{player}"
+        lore1: "&7Ранг: &e{rank}"
+        lore2: "&7Время в сети: &e{playtime}"
+      stats:
+        name: "&e&lСтатистика"
+        lore1: "&7Просмотр вашей статистики"
+        lore2: "&7по всем серверам"
+      achievements:
+        name: "&6&lДостижения"
+        lore1: "&7Ваши достижения: &e{count}"
+      settings:
+        name: "&b&lНастройки"
+        lore1: "&7Настройки профиля"
+    cosmetics:
+      particles:
+        name: "&6&lЧастицы"
+        lore1: "&7Выберите эффект частиц"
+      pets:
+        name: "&a&lПитомцы"
+        lore1: "&7Выберите питомца"
+      gadgets:
+        name: "&e&lГаджеты"
+        lore1: "&7Различные гаджеты"
+      hats:
+        name: "&6&lШляпы"
+        lore1: "&7Украсьте свою голову"
+      suits:
+        name: "&b&lКостюмы"
+        lore1: "&7Смените свой костюм"
+      click: "&eНажмите для просмотра!"
+
+# Профиль игрока
+
+chat:
+  spam-warning: "&cНе спамьте! Подождите немного перед следующим сообщением!"
+  similar-message: "&cНельзя отправлять одинаковые сообщения!"
+  muted: "&cВы заглушены!"
+
+commands:
+  loma:
+    help-header: "&7&m-------- &b&l Помощь LoMa &7&m--------"
+    help-footer: "&7&m--------------------------------"
+    version: "&bLoMa &7версия &e{version} &7от &aJaffyFox Server"
+  help:
+    reload: "&b/loma reload &7- Перезагрузить конфигурацию"
+    debug: "&b/loma debug &7- Включить/выключить режим отладки"
+    help: "&b/loma help &7- Показать эту справку"
+    stats: "&b/loma stats &7- Показать статистику"
+    npc: "&b/lmnpc &7- Управление NPC"
+    spawn: "&b/spawn &7- Телепортация на спавн"
+    setspawn: "&b/setspawn &7- Установить спавн"
+  npc:
+    usage: "&cИспользование: /lmnpc <create|remove|list|edit|tp|action>"
+    create-usage: "&cИспользование: /lmnpc create <name> [skin]"
+    remove-usage: "&cИспользование: /lmnpc remove <id>"
+    edit-usage: "&cИспользование: /lmnpc edit <id> <property> <value>"
+    tp-usage: "&cИспользование: /lmnpc tp <id>"
+    action-usage: "&cИспользование: /lmnpc action <id> <action> <args...>"
+    other-no-permission: "&cУ вас нет прав телепортировать других!"
+
+  admin:
+    player-data-reset: "&aДанные игрока &e{player} &aсброшены!"
+    maintenance-enabled: "&cРежим тех. работ &4включён&c!"
+  actionbar:
+    spawn-protection: "&cВы находитесь в защищённой зоне!"
+    double-jump-ready: "&aДвойной прыжок!"
+    connecting: "&eПодключение к {server}..."
+  titles:
+    welcome:
+      title: "&b&lДОБРО ПОЖАЛОВАТЬ"
+      subtitle: "&7на &eJaffyFox Server Network"
+    server-change:
+      title: "&a&lПОДКЛЮЧЕНИЕ"
+      subtitle: "&7к &e{server}"
+    maintenance:
+      title: "&c&lТЕХ. РАБОТЫ"
+      subtitle: "&7Сервер недоступен"
+
+profile:
+  viewing: "&7Просмотр профиля: &e{player}"
+  rank: "&7Ранг: &e{rank}"
+  playtime: "&7Время в сети: &e{time}"
+  last-seen: "&7Последний раз: &e{time}"
+  current-server: "&7Текущий сервер: &e{server}"
+
+achievements:
+  menu:
+    title: "&8Достижения"
+  status:
+    done: "&aПолучено"
+    not-done: "&7Не получено"
+  awarded:
+    title: "&6&lДостижение!"
+    chat: "&6Вы получили достижение: &e{name}"
+
+# Дополнительные секции для совместимости с кодом
+scoreboard:
+  loading: "&7Загрузка..."
+  unknown: "&7Неизвестно"
+  none: "&7Нет"
+
+errors:
+  database-connection: "&cНе удалось подключиться к базе данных!"
+
+actionbar:
+  spawn-protection: "&cВы находитесь в защищённой зоне!"
+  double-jump-ready: "&aДвойной прыжок готов!"
+  connecting: "&eПодключение к {server}..."
+
+titles:
+  welcome:
+    title: "&b&lДОБРО ПОЖАЛОВАТЬ"
+    subtitle: "&7на &eJaffyFox Server Network"
+  server-change:
+    title: "&a&lПОДКЛЮЧЕНИЕ"
+    subtitle: "&7к &e{server}"
+  maintenance:
+    title: "&c&lТЕХ. РАБОТЫ"
+    subtitle: "&7Сервер недоступен"
+
+stats:
+  header: "&7&m------- &b&lСтатистика {player} &7&m-------"
+  total: "&7Всего по сети: &e{hours}"
+  empty: "&7Нет данных по серверам"
+  entry: "&7{server}: &e{hours}"
+  footer: "&7&m-------------------------------"

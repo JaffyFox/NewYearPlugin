@@ -1,0 +1,56 @@
+# Servers selector menu configuration
+
+title: "menu.titles.servers"
+size: 27
+fill-item:
+  enabled: true
+  material: GRAY_STAINED_GLASS_PANE
+  name: " "
+close-button:
+  enabled: true
+  slot: 26
+  material: BARRIER
+  name: "menu.close"
+
+servers:
+  events:
+    slot: 11
+    material: FIREWORK_ROCKET
+    name: "<gradient:#FFD700:#FFA500>Ивенты</gradient>"
+    lore:
+      - "&7Основные ивенты сервера"
+      - "&7Веселье, конкурсы и призы"
+      - ""
+      - "&eНажмите, чтобы подключиться!"
+    server: "main_events"
+    open: false
+    connect-command: ""
+    allow-permissions: [Nolzikki, Jaffy_mine, weafteri, sk8ou, SayzzSee]
+    deny-permissions: []
+  survival:
+    slot: 13
+    material: GRASS_BLOCK
+    name: "<gradient:#55FF55:#00AA00>Выживание</gradient>"
+    lore:
+      - "&7Выживание(не для всех игроков!)"
+      - ""
+      - "&eНажмите, чтобы подключиться!"
+    server: "survival"
+    open: false
+    connect-command: ""
+    allow-permissions: [DeXius_08, Jaffy_mine, Nimfetka881]
+    deny-permissions: []
+  extra_events:
+    slot: 15
+    material: AMETHYST_SHARD
+    name: "<gradient:#CF66FF:#FFD700>Доп. Ивенты</gradient>"
+    lore:
+      - "&7Дополнительные ивенты"
+      - "&7Эксперименты и мини-режимы"
+      - ""
+      - "&eНажмите, чтобы подключиться!"
+    server: "second_events"
+    open: false
+    connect-command: ""
+    allow-permissions: [Nolzikki, Jaffy_mine, ]
+    deny-permissions: []

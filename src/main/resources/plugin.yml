@@ -1,9 +1,82 @@
 name: NewYearPlugin
 description: "New Year Plugin by JaffyFox"
-website: 
+website: https://github.com/JaffyFox/NewYearPlugin
 author: JaffyFox
 version: '1.0'
 main: ua.jaffyfox.newYearPlugin.NewYearPlugin
 api-version: '1.21'
+
 commands:
+  jump_boost:
+    description: Change jump boost level
+    usage: /jump_boost [1-5]
+    aliases:
+      - jb
+
+  gamemode:
+    description: Change your gamemode
+    usage: /gamemode <survival|creative|adventure|spectator>
+    aliases:
+      - gm
+
+  elevator_go:
+    description: Teleport to elevator floor
+    usage: /elevator_go <floor>
+
+  piss:
+    description: Start urination for yourself or a target player
+    usage: /piss [player]
+    aliases:
+      - pee
+
+  speed:
+    description: Set your speed effect level
+    usage: /speed [0-5]
+
+  spawn:
+    description: Teleport to configured spawn location
+    usage: /spawn
+
+  vomit:
+    description: Trigger vomiting for yourself or a target player
+    usage: /vomit [player]
+    aliases:
+      - puke
+
+  poop:
+    description: Start pooping for yourself or a target player
+    usage: /poop [player]
+    aliases:
+      - shit
+
+  sit:
+    description: Sit down on blocks or at current position
+    usage: /sit [on|off]
+
+
+permissions:
+  newyear.piss:
+    description: Allow using /piss on yourself
+    default: true
+  newyear.piss.others:
+    description: Allow using /piss on other players
+    default: op
+  newyear.vomit:
+    description: Allow using /vomit on yourself
+    default: true
+  newyear.vomit.others:
+    description: Allow using /vomit on other players
+    default: op
+  newyear.poop:
+    description: Allow using /poop on yourself
+    default: true
+  newyear.poop.others:
+    description: Allow using /poop on other players
+    default: op
+  newyear.sit.use:
+    description: Allow using /sit and right-click sitting
+    default: true
+  newyear.sit.toggle:
+    description: Allow toggling right-click sitting via /sit on|off
+    default: op
 

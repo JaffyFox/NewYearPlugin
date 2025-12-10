@@ -1,0 +1,43 @@
+# Cosmetics menu configuration
+# Use either localization keys (e.g., menu.titles.cosmetics) or raw colored text
+
+title: "Косметика"
+size: 54
+fill-item:
+  enabled: true
+  material: PURPLE_STAINED_GLASS_PANE
+  name: " "
+close-button:
+  enabled: true
+  slot: 53
+  material: BARRIER
+  name: "&c&lЗакрыть"
+
+categories:
+  particles:
+    slot: 20
+    material: BLAZE_POWDER
+    name: "&6&lЧастицы"
+    lore:
+      - "&7Выберите эффект частиц"
+      - ""
+      - "&eНажмите для просмотра!"
+    action: "menu:particles"
+  pets:
+    slot: 24
+    material: BONE
+    name: "&a&lПитомцы"
+    lore:
+      - "&7Выберите питомца"
+      - ""
+      - "&eНажмите для просмотра!"
+    action: "menu:pets"
+  hats:
+    slot: 22
+    material: GOLDEN_HELMET
+    name: "&6&lШляпы"
+    lore:
+      - "&7Украсьте свою голову"
+      - ""
+      - "&eНажмите для просмотра!"
+    action: "menu:hats"

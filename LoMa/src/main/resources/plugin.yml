@@ -1,0 +1,181 @@
+name: LoMa
+version: 1.0.0
+main: com.loma.plugin.LoMa
+api-version: 1.21
+authors: [JaffyFox Server]
+description: Advanced Lobby Manager for Minecraft Paper servers
+website: https://discord.gg/P7cBPcPufJ
+
+commands:
+  loma:
+    description: Main LoMa command
+    usage: /<command> [reload|help|version]
+    permission: loma.admin
+    aliases: [lobbymanager, lm]
+
+  lmnpc:
+    description: NPC management command (LoMa)
+    usage: /<command> [create|remove|list|edit] [args]
+    permission: loma.npc
+    aliases: [npcs, lnpc]
+
+  spawn:
+    description: Teleport to spawn
+    usage: /<command> [player]
+    permission: loma.spawn
+
+  setspawn:
+    description: Set the spawn location
+    usage: /<command>
+    permission: loma.setspawn
+
+  server:
+    description: Connect to another server
+    usage: /<command> <server>
+    permission: loma.server
+    aliases: [connect, play]
+
+  lobby:
+    description: Return to lobby
+    usage: /<command>
+    permission: loma.lobby
+    aliases: [hub]
+
+  profile:
+    description: View player profile
+    usage: /<command> [player]
+    permission: loma.profile
+    aliases: [prof]
+
+  seeme:
+    description: Toggle sharing your online location across profile
+    usage: /<command> <on|off>
+    permission: loma.profile
+    aliases: [sm]
+
+  stats:
+    description: Open network playtime stats
+    usage: /<command> [player]
+    permission: loma.profile
+  msg:
+    description: Send a private message to a player (cross-server)
+    usage: /<command> <player> <message>
+    permission: loma.msg
+    aliases: [tell, w, pm]
+  r:
+    description: Reply to the last private message partner
+    usage: /<command> <message>
+    permission: loma.msg.reply
+  srv:
+    description: Toggle server availability (open/close)
+    usage: /<command> [server] <on|off>
+    permission: loma.srv
+
+  login:
+    description: Authorize on server
+    usage: /<command> <password>
+    aliases: [l, auth, л, логин, войти, вход]
+  holabot_account_add:
+    description: Internal command for HoloBot to create accounts
+    usage: /<command> <username> <passwordHash> <servers> <discordId>
+
+permissions:
+  loma.*:
+    description: All LoMa permissions
+    default: op
+    children:
+      loma.admin: true
+      loma.npc: true
+      loma.spawn: true
+      loma.setspawn: true
+      loma.server: true
+      loma.lobby: true
+      loma.profile: true
+      loma.bypass: true
+      loma.reload: true
+      loma.doublejump: true
+      loma.fly: true
+
+  loma.admin:
+    description: Access to admin commands
+    default: op
+    children:
+      loma.npc: true
+      loma.setspawn: true
+      loma.server: true
+      loma.lobby: true
+      loma.profile: true
+      loma.bypass: true
+      loma.srv: true
+      loma.msg: true
+      loma.msg.reply: true
+
+  loma.npc:
+    description: Manage NPCs
+    default: op
+
+  loma.spawn:
+    description: Use spawn command
+    default: true
+
+  loma.spawn.others:
+    description: Teleport others to spawn
+    default: op
+
+  loma.setspawn:
+    description: Set spawn location
+    default: op
+
+  loma.server:
+    description: Use server command
+    default: true
+
+  loma.lobby:
+    description: Use lobby command
+    default: true
+
+  loma.profile:
+    description: View player profiles
+    default: true
+
+  loma.bypass:
+    description: Bypass lobby protections
+    default: op
+    children:
+      loma.bypass.build: true
+      loma.bypass.damage: true
+      loma.bypass.pvp: true
+
+  loma.reload:
+    description: Reload plugin configuration
+    default: op
+
+  loma.doublejump:
+    description: Use double jump in lobby
+    default: true
+
+  loma.fly:
+    description: Fly in lobby
+    default: op
+
+  loma.vip:
+    description: VIP permissions
+    default: false
+    children:
+      loma.doublejump: true
+      loma.particle: true
+      loma.joinmessage: true
+
+  loma.srv:
+    description: Toggle servers availability
+    default: op
+
+  loma.msg:
+    description: Use private messages
+    default: true
+    children:
+      loma.msg.reply: true
+
+  loma.msg.reply:
+    description: Use /r to reply to last partner
+    default: true

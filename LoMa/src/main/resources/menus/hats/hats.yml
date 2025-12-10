@@ -1,0 +1,33 @@
+title: "&8Шляпы"
+size: 54
+
+fill-item:
+  enabled: true
+  material: PURPLE_STAINED_GLASS_PANE
+  name: " "
+
+off-button:
+  slot: 49
+  material: BARRIER
+  name: "&c&lСнять шляпу"
+
+pages:
+  first_page:
+    page: 1
+    items:
+      poop:
+        id: "poop"
+        material: LEATHER_HELMET
+        name: "&6&lГовняшка"
+      pumpkin:
+        id: "pumpkin"
+        material: CARVED_PUMPKIN
+        name: "&e&lТыква"
+
+  second_page:
+    page: 2
+    items:
+      diamond:
+        id: "diamond"
+        material: DIAMOND_HELMET
+        name: "&b&lАлмаз"

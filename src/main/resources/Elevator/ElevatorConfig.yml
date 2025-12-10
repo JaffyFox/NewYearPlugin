@@ -1,0 +1,11 @@
+elevator:
+  sound: ENTITY_ENDERMAN_TELEPORT
+  sound_volume: 1.0
+  sound_pitch: 1.0
+
+messages:
+  teleport_message: "§aТелепортация на этаж %floor%"
+  floor_selection: "§e§lВыберите этаж:"
+  button_format: "§b[Этаж %floor%] "
+  not_in_elevator: "§cВы не находитесь в лифте!"
+  invalid_floor: "§cЭтот этаж не существует!"
