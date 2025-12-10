@@ -1,0 +1,75 @@
+enabled: true
+threshold: 5              # сколько приемов пищи подряд вызывает блевоту
+
+duration_seconds: 4
+tick_period: 2
+spawn_radius: 2
+
+spawn:
+  forward_offset: 0.35     # на сколько вперёд от рта
+  spread: 0.10             # разброс (плотность кучи на полу)
+  forward_speed: 0.18
+  down_speed: -0.20
+
+# побочные эффекты на время блевоты
+effects:
+  nausea:
+    enabled: true
+    amplifier: 1
+  slowness:
+    enabled: false
+    amplifier: 1
+
+sound:
+  enabled: true
+  name: minecraft:entity.player.burp
+  volume: 1.0
+  pitch: 0.9
+
+# Interaction settings for vomit stream
+interactions:
+  raytrace_max_distance: 5.0   # how far forward to search for hit blocks
+  samples_per_tick: 3          # how many rays per tick (area coverage)
+
+water:
+  enabled: true
+  glass_materials:
+    - GREEN_STAINED_GLASS
+    - LIME_STAINED_GLASS
+  unbreakable: true
+  revert_min_seconds: 10
+  revert_max_seconds: 25
+
+snow:
+  enabled: true
+  carpet_materials:
+    - GREEN_CARPET
+    - LIME_CARPET
+
+messages:
+  progress_actionbar: "§eПереедание: §6%count%§7/§6%threshold%"
+  trigger_chat: "%player% мне что-то плохо..."
+  vomit_effect: "§eВас стошнило..."
+
+# список блоков для блевоты по умолчанию
+# Можно переопределить, указав валидные Bukkit Material-имена
+# Пример: [MOSS_BLOCK, SLIME_BLOCK, GREEN_WOOL]
+drops:
+  per_tick: 6
+  materials:
+    - MOSS_BLOCK
+    - SLIME_BLOCK
+    - GREEN_WOOL
+    - LIME_WOOL
+    - LIME_TERRACOTTA
+    - GREEN_TERRACOTTA
+    - LIME_CONCRETE
+    - GREEN_CONCRETE
+    - LIME_CONCRETE_POWDER
+    - GREEN_CONCRETE_POWDER
+    - LIME_STAINED_GLASS
+    - GREEN_STAINED_GLASS
+    - ORANGE_STAINED_GLASS
+    - BROWN_STAINED_GLASS
+    - BROWN_CONCRETE_POWDER
+    - ORANGE_CONCRETE_POWDER

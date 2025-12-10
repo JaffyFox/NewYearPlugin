@@ -1,0 +1,16 @@
+enabled: true
+# If true, a second double-press within fly_window_ms enables survival flight
+enable_fly_window: false
+cooldown_seconds: 3
+
+# Motion parameters
+force: 1.5    # forward multiplier
+height: 0.8   # vertical boost
+
+sound:
+  name: minecraft:entity.bat.takeoff
+  volume: 1.0
+  pitch: 1.0
+
+# Window in ms during which a repeated double-press can enable flight
+fly_window_ms: 1500

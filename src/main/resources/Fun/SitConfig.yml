@@ -1,0 +1,26 @@
+enabled: true
+right_click: true
+require_empty_hand: false
+allow_command: true
+sneak_to_stand: true
+
+# Y offsets for seat (ArmorStand) relative to block base
+offsets:
+  slab_bottom: 0.45
+  slab_top: 0.95
+  stairs: 0.52
+  default: 0.45
+  anywhere: 0.45   # for /sit (relative to block under player's feet)
+
+sound:
+  enabled: false
+  name: minecraft:block.wood.place
+  volume: 1.0
+  pitch: 1.0
+
+messages:
+  disabled: "§cФункция сидения выключена."
+  no_permission: "§cНедостаточно прав."
+  already_sitting: "§eВы уже сидите."
+  started_sitting: "§aВы сели."
+  stood_up: "§aВы встали."

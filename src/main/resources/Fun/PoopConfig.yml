@@ -1,0 +1,70 @@
+enabled: true
+
+# visual stream
+duration_seconds: 4
+tick_period: 2
+spawn_radius: 1.8
+
+spawn:
+  backward_offset: 0.45  # how far behind the player (pelvis)
+  spread: 0.10           # lateral spread
+  back_speed: 0.14       # push backward
+  down_speed: -0.22      # fall speed
+
+# optional effects during pooping
+effects:
+  nausea:
+    enabled: false
+    amplifier: 1
+
+sound:
+  enabled: false
+  name: minecraft:entity.player.burp
+  volume: 0.8
+  pitch: 0.8
+
+messages:
+  trigger_chat: "%player% кажется, у меня понос..."
+  poop_effect: "§6§lУ вас понос..."
+  disabled: "§cФункция испускания фекалий выключена."
+  no_permission: "§cНедостаточно прав."
+  player_not_found: "§cИгрок не найден."
+  command_self: "§eВы испустили фекалии."
+  command_other: "§eВы запустили срачку у %player%."
+  command_target: "§eУ вас началась срачка по команде %sender%."
+
+# item drops for visual stream (despawned automatically)
+drops:
+  enabled: true
+  per_tick: 5
+  materials:
+    - BROWN_CONCRETE
+    - BROWN_TERRACOTTA
+    - BROWN_CONCRETE_POWDER
+    - BROWN_WOOL
+    - MUD
+
+# raytrace interactions
+interactions:
+  raytrace_max_distance: 4.5
+  samples_per_tick: 3
+
+# If poop hits water, replace water with a brown block temporarily and revert later
+water:
+  enabled: true
+  block_materials:
+    - BROWN_CONCRETE
+    - BROWN_TERRACOTTA
+  unbreakable: true
+  revert_min_seconds: 12
+  revert_max_seconds: 28
+
+# If poop hits snow/ground, place a brown block there (no revert). Control drops on break here.
+ground:
+  enabled: true
+  block_materials:
+    - BROWN_CONCRETE_POWDER
+    - COARSE_DIRT
+    - PODZOL
+    - BROWN_TERRACOTTA
+  no_drops: true
